@@ -16,7 +16,8 @@ defmodule VoceDecide.Application do
       # Start a worker by calling: VoceDecide.Worker.start_link(arg)
       # {VoceDecide.Worker, arg},
       # Start to serve requests, typically the last entry
-      VoceDecideWeb.Endpoint
+      VoceDecideWeb.Endpoint,
+      VoceDecide.GameState
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

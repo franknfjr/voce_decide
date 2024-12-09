@@ -17,7 +17,8 @@ defmodule VoceDecideWeb.Router do
   scope "/", VoceDecideWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", VoceDecideLive
+    live "/reset", ResetLive
   end
 
   # Other scopes may use custom stacks.
@@ -27,7 +28,6 @@ defmodule VoceDecideWeb.Router do
 
   # Enable Swoosh mailbox preview in development
   if Application.compile_env(:voce_decide, :dev_routes) do
-
     scope "/dev" do
       pipe_through :browser
 

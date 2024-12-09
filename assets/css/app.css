@@ -3,3 +3,330 @@
 @import "tailwindcss/utilities";
 
 /* This file is for your main application CSS */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Mudado para flex-start para melhor ajuste */
+    min-height: 100vh;
+    margin: 0;
+    font-size: 16px; /* Tamanho base reduzido */
+    padding: 20px 0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 30px; /* Padding reduzido */
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    max-width: 900px; /* Largura máxima reduzida */
+    width: 95%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2em; /* Título um pouco menor */
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+#story-text {
+    font-size: 1.2em;
+    margin: 20px 0;
+    line-height: 1.4;
+}
+
+button {
+    margin: 10px; /* Menos margem */
+    padding: 12px 24px; /* Padding reduzido */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.culpado {
+    background-color: #ff4136;
+}
+
+.culpado:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+.inocente {
+    background-color: #3498db;
+}
+
+.inocente:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+#choices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.images-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.main-image {
+    flex-shrink: 0;
+}
+
+#userImage {
+    height: 250px;
+    width: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.qr-code-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.qr-code {
+    width: 210px;
+    height: 210px;
+    object-fit: contain;
+}
+
+#userImage {
+    height: 250px; /* Imagem um pouco menor */
+    width: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#clearBtn {
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 30px;
+    font-size: 1.1em;
+    padding: 10px 20px;
+}
+
+#clearBtn:hover {
+    text-decoration: none;
+    color: #0056b3;
+}
+
+#voteBtn {
+    background-color: transparent;
+    color: tomato;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 30px;
+    font-size: 1.1em;
+    padding: 10px 20px;
+}
+
+#voteBtn:hover {
+    text-decoration: none;
+    color: coral;
+}
+#score {
+    font-size: 1.2em;
+    margin: 25px 0;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.score-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.score-row p {
+    min-width: 120px;
+    text-align: left;
+    margin: 0 !important;
+    white-space: nowrap;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.culpado-progress {
+    background-color: #ff4136;
+}
+
+.inocente-progress {
+    background-color: #3498db;
+}
+
+.container button#clearBtn {
+    font-size: 1.5em;
+    padding: 20px 40px;
+    background-color: #dc3545;
+    color: white;
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+.container button#clearBtn:hover {
+    background-color: #c82333;
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+    .container {
+        padding: 25px;
+        margin-top: 10px;
+    }
+
+    #userImage {
+        height: 200px; /* Ainda menor para MacBook */
+    }
+
+    .qr-code {
+        width: 190px;
+        height: 190px;
+    }
+
+    .images-container {
+        gap: 20px;
+    }
+
+    .button-container {
+        margin-top: 10px;
+    }
+
+    #score {
+        margin: 20px 0;
+    }
+
+    .score-row {
+        padding: 8px;
+        margin: 10px 0;
+    }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        height: auto;
+        min-height: 100vh;
+        padding: 10px 0;
+    }
+
+    .container {
+        padding: 15px;
+        width: 98%;
+        margin: 5px auto;
+        border-radius: 8px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    #story-text {
+        font-size: 1.2em;
+        margin: 15px 0;
+        line-height: 1.3;
+    }
+
+    #choices {
+        flex-direction: column;
+        gap: 15px;
+        margin: 20px 0;
+    }
+
+    .qr-code-container {
+        display: none;
+    }
+
+    .images-container {
+        justify-content: center;
+    }
+
+    #userImage {
+        height: 180px;
+        max-width: 90%;
+        object-fit: contain;
+    }
+
+    .button-container {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1em;
+        margin: 5px;
+        white-space: nowrap;
+    }
+
+    .score-row {
+        padding: 8px;
+        margin: 10px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .score-row p {
+        min-width: 100px;
+        text-align: left;
+        font-size: 0.9em;
+        white-space: nowrap;
+    }
+
+    .progress-bar {
+        height: 15px;
+        margin: 0;
+        border-radius: 8px;
+    }
+}

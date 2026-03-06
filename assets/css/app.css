@@ -96,8 +96,9 @@ button {
 }
 
 #userImage {
-    height: 250px;
-    width: auto;
+    height: 150px;
+    width: 500px;
+    object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -118,12 +119,7 @@ button {
     object-fit: contain;
 }
 
-#userImage {
-    height: 250px; /* Imagem um pouco menor */
-    width: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+
 
 #clearBtn {
     background-color: transparent;
@@ -222,7 +218,8 @@ button {
     }
 
     #userImage {
-        height: 200px; /* Ainda menor para MacBook */
+        height: 125px;
+        width: 500px;
     }
 
     .qr-code {
@@ -290,9 +287,10 @@ button {
     }
 
     #userImage {
-        height: 180px;
+        height: 120px;
+        width: 500px;
         max-width: 90%;
-        object-fit: contain;
+        object-fit: cover;
     }
 
     .button-container {

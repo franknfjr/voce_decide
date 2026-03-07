@@ -1,43 +1,86 @@
-# VoceDecide
+<p align="center">
+  <img src="priv/static/images/logo.jpeg" alt="VoceDecide" width="200" />
+</p>
 
-Aplicação interativa de votação em tempo real, usada em palestras para engajar o público. Construída com Phoenix LiveView.
+<h1 align="center">VoceDecide</h1>
 
-**App:** [https://voce-decide.fly.dev](https://voce-decide.fly.dev/)
+<p align="center">
+  <strong>Aplicação interativa de votação em tempo real para palestras</strong><br/>
+  Construída com Elixir + Phoenix LiveView
+</p>
 
-## Onde foi usado
+<p align="center">
+  <a href="https://voce-decide.fly.dev">
+    <img src="https://img.shields.io/badge/🚀_App_Live-voce--decide.fly.dev-blueviolet?style=for-the-badge" alt="App Live" />
+  </a>
+</p>
 
-### GambiConf 2024
+---
 
-**Palestra:** Análise de malware: R$2 ou 1 arquivo misterioso?
-**Palestrante:** [Cleber Soares](https://www.instagram.com/clebersoares_sec/)
-**Vídeo:** [YouTube](https://youtu.be/1bo-s5ErGYw)
+## 🎬 Em ação
 
-No final da palestra, o Cleber usa o app para o público votar e decidir o que acontece a seguir.
+No final das palestras, o [Cleber Soares](https://www.instagram.com/clebersoares_sec/) usa o VoceDecide para o público votar e decidir o que acontece a seguir.
 
-### FortalSec 2025
+### GambiConf 2024 — Análise de malware: R$2 ou 1 arquivo misterioso?
 
-**Palestra:** Análise de Malware e Forense Mobile: Investigando o APK do Jogo do Botinho.
-**Palestrante:** [Cleber Soares](https://www.instagram.com/p/DL54mv3MLN2/?img_index=2)
+<p align="center">
+  <a href="https://youtu.be/1bo-s5ErGYw">
+    <img src="https://img.youtube.com/vi/1bo-s5ErGYw/maxresdefault.jpg" alt="GambiConf 2024 - Cleber Soares" width="700" />
+  </a>
+  <br/>
+  <sub>▶️ Clique na imagem para assistir no YouTube</sub>
+</p>
+
+### FortalSec 2025 — Análise de Malware e Forense Mobile: Investigando o APK do Jogo do Botinho
 
 Uma abordagem investigativa sobre segurança em aplicativos Android — explorando um caso real de golpe envolvendo um APK misterioso, onde a promessa de ganhos fáceis resultou em perdas financeiras e comprometimento de dados pessoais.
 
-## Sobre o Cleber Soares
+---
 
-Entusiasta de hardware hacking, biohacking e software livre, com mais de 20 anos de experiência na área de tecnologia. Pós-graduado em CyberSecurity e Threat Intelligence, atua em análise de malwares, resposta a incidentes e computação forense. Fundador e líder do OWASP Belém, membro da Devs Norte e do SOC Brazil, além de autor e coautor de livros e revistas sobre cibersegurança.
+## 🎤 Sobre o Cleber Soares
 
-## Setup
+<table>
+  <tr>
+    <td width="600">
+      Entusiasta de hardware hacking, biohacking e software livre, com mais de 20 anos de experiência na área de tecnologia. Pós-graduado em CyberSecurity e Threat Intelligence, atua em análise de malwares, resposta a incidentes e computação forense.
+      <br/><br/>
+      Fundador e líder do <strong>OWASP Belém</strong>, membro da <strong>Devs Norte</strong> e do <strong>SOC Brazil</strong>, além de autor e coautor de livros e revistas sobre cibersegurança.
+      <br/><br/>
+      <a href="https://www.instagram.com/clebersoares_sec/">📸 Instagram</a> · <a href="https://www.instagram.com/p/DExDIaJyaJw/">📢 FortalSec</a>
+    </td>
+  </tr>
+</table>
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+---
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+## ⚡ Setup
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+```bash
+# Instalar dependências
+mix setup
 
-## Learn more
+# Iniciar servidor
+mix phx.server
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+# Ou dentro do IEx
+iex -S mix phx.server
+```
+
+Acesse [`localhost:4000`](http://localhost:4000) no navegador.
+
+## 🚀 Deploy
+
+A aplicação roda na [Fly.io](https://fly.io) na região `gru` (São Paulo).
+
+```bash
+fly deploy
+```
+
+## 📚 Links
+
+| | |
+|---|---|
+| Phoenix | [phoenixframework.org](https://www.phoenixframework.org/) |
+| Docs | [hexdocs.pm/phoenix](https://hexdocs.pm/phoenix) |
+| Guides | [hexdocs.pm/phoenix/overview](https://hexdocs.pm/phoenix/overview.html) |
+| Forum | [elixirforum.com](https://elixirforum.com/c/phoenix-forum) |

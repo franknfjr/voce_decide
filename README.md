@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="priv/static/images/logo.jpeg" alt="VoceDecide" width="200" />
-</p>
-
 <h1 align="center">VoceDecide</h1>
 
 <p align="center">
